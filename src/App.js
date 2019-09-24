@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+import './App.css'
 
 class App extends Component {
   state = {
@@ -14,7 +15,6 @@ class App extends Component {
     });
   };
 
-
   backdropClickHandler = () => {
     this.setState({sideDrawerOpen: false});
   }
@@ -25,7 +25,7 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
-      <div style={{ height: "100%" }}>
+      <div style={{ height: "100%" }} className="App">
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}

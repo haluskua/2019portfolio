@@ -9,16 +9,28 @@ const toolbar = props => (
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
       <div className="toolbar_logo">
-        <a href="/">THE LOGO</a>
+        <a href="/">OMPHALUS KUA</a>
       </div>
       <div className="spacer" />
       <div className="toolbar_navigation-items">
         <ul>
           <li>
-            <a href="/">Products</a>
+            <a href="/">HELLO</a>
           </li>
           <li>
-            <a href="/">Users</a>
+            <a href="/">PROJECTS</a>
+          </li>
+          <li>
+            <a href="/">WORKSHOP</a>
+          </li>
+          <li>
+            <a href="/">PHOTOS</a>
+          </li>
+          <li>
+            <a href="/">LIFE</a>
+          </li>
+          <li>
+            <a href="/">CONTACT</a>
           </li>
         </ul>
       </div>

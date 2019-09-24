@@ -3,7 +3,8 @@
   width: 100%;
   top: 0;
   left: 0;
-  background: #521751;
+  /* background: #521751; */
+  background: rgba(82, 23, 81, 0.34);
   height: 56px;
 }
 .toolbar_navigation {
