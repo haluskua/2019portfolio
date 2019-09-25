@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
-import './App.css'
+import './App.scss'
 
 class App extends Component {
   state = {
@@ -30,7 +30,7 @@ class App extends Component {
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
         <main style={{ marginTop: "64px" }}>
-          <p>This is the content!</p>
+          <p className="content-paragraph">This is the content!</p>
         </main>
       </div>
     );
