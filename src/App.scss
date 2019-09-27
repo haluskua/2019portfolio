@@ -5,9 +5,28 @@
   color: rgb(206, 188, 111);
   padding: 4px;
 }
+.content-paragraph ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content-paragraph li {
+  list-style: none;
+  padding: 4px 0;
+}
+.welcome {
+  width: 100%;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1352em;
+  font-size: 1.13rem;
+}
 
 .hori-flex ul {
-  border: 1px solid rgb(117, 44, 44);
+  border: 0.51px solid rgba(130, 17, 25, 0.1411764705882353);
   padding: 0;
 }
 .hori-flex ul li {
@@ -25,34 +44,51 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  width: 25%;
+  width: 37%;
   height: 40px;
   padding: 0;
   margin: 0 auto;
-  font-weight: bold;
-  font-size: 1.1rem;
-  letter-spacing: 0.03rem;
+  font-size: 0.87rem;
   color: #010100;
   border-radius: 100% 100% 0 0;
   background: rgba(71, 11, 72, 0.28);
+  box-shadow: 1px 0px 7px rgba(221, 172, 66, 0.5);
   text-align: center;
-  background: url("../src/assets/images/polygon3.svg");
+  background: url("../src/assets/images/polygon.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  box-shadow: 1px 0px 7px rgba(238, 217, 191, 0.75);
 }
 .hori-flex ul li p a:hover,
 .hori-flex ul li p a:active {
-  color: white;
+  color: rgb(39, 38, 28);
 }
 
 @media (min-width: 769px) {
   .hori-flex ul li p a {
-    width: 60%;
-    height: 40px;
+    width: 18%;
+    letter-spacing: 0.03rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: url("../src/assets/images/polygon2.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    box-shadow: 1px -1px 9px rgba(226, 226, 123, 0.75);
   }
-  .hori-flex ul li p a {
-    width: 18%;  
-    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  .hori-flex ul li p a:hover,
+  .hori-flex ul li p a:active {
+    color: rgb(255, 252, 209);
+    box-shadow: 1px 0px 7px rgba(85, 62, 31, 0.75);
+  }
+  .App {
+    background: transparent;
+  }
+  .welcome {
+    color: black;
+    font-size: 1.83em;
+    letter-spacing: 0;
   }
 }

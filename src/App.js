@@ -41,13 +41,23 @@ class App extends Component {
               <li>
                 <p>
                   <a>Profile</a>
-                  <a>Date</a>
+                  <a>Tech & skills</a>
                   <a>Date</a>
                 </p>
               </li>
             </ul>
           </div>
-          <p className="content-paragraph">This is the content!</p>
+          <section className="content-paragraph">
+            <ul>
+              <li>
+                <hi className="welcome"> DESIGN + CODE</hi>
+              </li>
+              <li>
+                <hi className="welcome">PORTFOLIO </hi>
+              </li>
+            </ul>
+            This is the content!
+          </section>
         </main>
       </div>
     );
