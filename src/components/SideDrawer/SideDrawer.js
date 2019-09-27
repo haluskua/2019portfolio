@@ -2,14 +2,14 @@ import React from "react";
 import "./SideDrawer.scss";
 
 const sideDrawer = props => {
-  //construct class
+  //construct class to toggle on and off
   let drawerClasses = "side-drawer";
   if (props.show) {
     drawerClasses = "side-drawer open";
   }
   return (
     <nav className={drawerClasses}>
-      <ul>
+      <ul className="ul-nav">
         <li>
           <a href="/">HELLO</a>
         </li>
