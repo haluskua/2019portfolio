@@ -1,32 +1,14 @@
-.App {
-  background: rgba(23, 3, 7, 0.4); }
-
-.content-paragraph {
-  color: #cebc6f;
-  padding: 4px; }
-
-.content-paragraph ul {
-  padding: 0;
+main {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
 
-.content-paragraph li {
-  list-style: none;
-  padding: 4px 0; }
-
-.welcome {
-  width: 100%;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 0.1352em;
-  font-size: 1.13rem; }
+.hori-flex {
+  background: rgba(23, 3, 7, 0.4); }
 
 .hori-flex ul {
   border: 0.51px solid rgba(130, 17, 25, 0.141176);
-  padding: 0; }
+  padding: 0;
+  background: rgba(20, 1, 1, 0.219); }
 
 .hori-flex ul li {
   list-style: none; }
@@ -37,6 +19,7 @@
   justify-content: space-around; }
 
 .hori-flex ul li p a {
+  font-family: 'Noto Serif SC', serif;
   cursor: pointer;
   align-items: center;
   display: flex;
@@ -71,15 +54,13 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: #200707;
     box-shadow: 1px -1px 9px rgba(226, 226, 123, 0.75); }
+  .hori-flex ul {
+    margin-top: 0; }
   .hori-flex ul li p a:hover,
   .hori-flex ul li p a:active {
     color: #fffcd1;
     box-shadow: 1px 0px 7px rgba(85, 62, 31, 0.75); }
   .App {
-    background: transparent; }
-  .welcome {
-    color: black;
-    font-size: 1.83em;
-    letter-spacing: 0; } }
+    background: transparent; } }

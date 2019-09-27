@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";
 import Backdrop from "./components/Backdrop/Backdrop";
+import TopDrawer from "./components/TopDrawer/TopDrawer";
 import "./App.scss";
 
 class App extends Component {
@@ -47,17 +48,7 @@ class App extends Component {
               </li>
             </ul>
           </div>
-          <section className="content-paragraph">
-            <ul>
-              <li>
-                <hi className="welcome"> DESIGN + CODE</hi>
-              </li>
-              <li>
-                <hi className="welcome">PORTFOLIO </hi>
-              </li>
-            </ul>
-            This is the content!
-          </section>
+          <TopDrawer />
         </main>
       </div>
     );
