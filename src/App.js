@@ -45,7 +45,7 @@ class App extends Component {
           <SideDrawer show={this.state.sideDrawerOpen} />
           <TopDrawer />
 
-          <Route path="/Home" component={Home} exact />
+          <Route path="/" component={Home} exact />
           <Route path="/Projects" component={Projects} exact />
           <Route path="/Life" component={Life} exact />
           <Route path="/Workshop" component={Workshop} />
