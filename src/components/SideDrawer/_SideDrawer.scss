@@ -1,0 +1,123 @@
+//  SASS--MIXINS--
+@mixin mobile {
+  @media (min-width: 360px) {
+    @content;
+  }
+}
+@mixin mobile-landscape {
+  @media (min-width: 568px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+@mixin desktop-large {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+//--VARIABLES--
+//colors
+
+// background: #b11818;
+$primary-red: #a21722;
+$primary-dark: #1b0103;
+
+$black-light: #251f1f;
+// $tk-primary-blue-dark: #31708E;
+// $tk-secondary-blue-med: #5085A5;
+// $tk-tertiary-blue-light: #8FC1E3;
+// $tk-off-white: #F7F9FB;
+
+// $tk-primary-fade: lighten($tk-primary-dark, 20%);
+
+// //image-background
+// $tk-primary-bgimage: url("../splash3.jpg");
+// $tk-secondary-bgimage: url("../wahine.png");
+
+.side-drawer {
+  height: 100%;
+  background: $primary-red;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70%;
+  max-width: 400px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.43s ease-out;
+  // background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  @include desktop {
+    display: none;
+  }
+}
+// reseting position of container to outside viewport
+.side-drawer.open {
+  transform: translateX(0);
+}
+.side-drawer li {
+  margin: 0.9rem 0;
+  list-style: none;
+}
+.side-drawer a {
+  color: $black-light;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.side-drawer a:hover,
+.side-drawer a:active {
+  color: #fa923f;
+}
+.ul-nav {
+  background: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 20px;
+}
+.ul-nav li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.5px;
+  margin: 7px 0;
+  padding: 5px 6px;
+  height: 40px;
+  width: 88%;
+  background: $black-light;
+  border-bottom: 1px solid #ecb260;
+  box-shadow: -2px 1px 0px 3px #751018;
+}
+.ul-nav li a {
+  height: 100%;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  color: palegoldenrod;
+  font-family: "Caveat Brush", cursive;
+}
+// @media (min-width: 769px) {
+//   .side-drawer {
+//     display: none;
+//   }
+// }

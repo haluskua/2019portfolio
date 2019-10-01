@@ -1,6 +1,6 @@
 .side-drawer {
   height: 100%;
-  background: rgba(12, 0, 0, 0.89);
+  background: #a21722;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   list-style: none;
   display: flex;
@@ -14,6 +14,9 @@
   z-index: 200;
   transform: translateX(-100%);
   transition: transform 0.43s ease-out; }
+  @media (min-width: 769px) {
+    .side-drawer {
+      display: none; } }
 
 .side-drawer.open {
   transform: translateX(0); }
@@ -23,7 +26,7 @@
   list-style: none; }
 
 .side-drawer a {
-  color: #ebdb8b;
+  color: #251f1f;
   text-decoration: none;
   font-size: 1rem; }
 
@@ -45,15 +48,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3px 0;
+  border-radius: 2.5px;
+  margin: 7px 0;
+  padding: 5px 6px;
   height: 40px;
-  width: 100%;
-  border: 1px solid #3f3424; }
+  width: 88%;
+  background: #251f1f;
+  border-bottom: 1px solid #ecb260;
+  box-shadow: -2px 1px 0px 3px #751018; }
 
 .ul-nav li a {
   height: 100%;
-  line-height: 2.5rem; }
-
-@media (min-width: 769px) {
-  .side-drawer {
-    display: none; } }
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  color: palegoldenrod;
+  font-family: "Caveat Brush", cursive; }

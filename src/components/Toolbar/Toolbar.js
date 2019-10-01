@@ -1,5 +1,5 @@
 import React from "react";
-import "./Toolbar.scss";
+import "./_Toolbar.scss";
 import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
 
 const toolbar = props => (
@@ -15,22 +15,19 @@ const toolbar = props => (
       <div className="toolbar_navigation-items">
         <ul>
           <li>
-            <a href="/">HELLO</a>
+            <a href="/Home">HELLO</a>
           </li>
           <li>
-            <a href="/">PROJECTS</a>
+            <a href="/Projects">PROJECTS</a>
           </li>
           <li>
-            <a href="/">WORKSHOP</a>
+            <a href="/Workshop">WORKSHOP</a>
           </li>
           <li>
-            <a href="/">PHOTOS</a>
+            <a href="/Life">LIFE</a>
           </li>
           <li>
-            <a href="/">LIFE</a>
-          </li>
-          <li>
-            <a href="/">CONTACT</a>
+            <a href="/Contact">CONTACT</a>
           </li>
         </ul>
       </div>

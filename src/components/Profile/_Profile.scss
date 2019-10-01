@@ -1,0 +1,10 @@
+.profile-drawer {
+    height: 100%;
+    background: green;
+}
+
+@media (min-width: 769px) {
+    .profile-drawer {
+        background:yellow;
+    }
+}

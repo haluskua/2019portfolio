@@ -1,6 +1,8 @@
 main {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  height: 100%;
+  margin-top: 0; }
 
 .hori-flex {
   background: rgba(23, 3, 7, 0.4); }
@@ -8,6 +10,8 @@ main {
 .hori-flex ul {
   border: 0.51px solid rgba(130, 17, 25, 0.141176);
   padding: 0;
+  margin-top: 43;
+  margin: 0;
   background: rgba(20, 1, 1, 0.219); }
 
 .hori-flex ul li {
@@ -19,7 +23,7 @@ main {
   justify-content: space-around; }
 
 .hori-flex ul li p a {
-  font-family: 'Noto Serif SC', serif;
+  font-family: "Noto Serif SC", serif;
   cursor: pointer;
   align-items: center;
   display: flex;
@@ -50,17 +54,18 @@ main {
     letter-spacing: 0.03rem;
     font-weight: bold;
     font-size: 1.1rem;
-    background: url("../src/assets/images/polygon2.svg");
+    background: url("../src/assets/images/polygon.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #200707;
-    box-shadow: 1px -1px 9px rgba(226, 226, 123, 0.75); }
+    box-shadow: 1px 0px 7px rgba(85, 62, 31, 0.75); }
   .hori-flex ul {
     margin-top: 0; }
   .hori-flex ul li p a:hover,
   .hori-flex ul li p a:active {
     color: #fffcd1;
-    box-shadow: 1px 0px 7px rgba(85, 62, 31, 0.75); }
+    color: black;
+    box-shadow: 1px -1px 9px rgba(226, 226, 123, 0.75); }
   .App {
     background: transparent; } }
