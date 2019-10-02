@@ -41,6 +41,11 @@ $primary-dark: #1b0103;
 $black-light: #251f1f;
 $secondary: yellow;
 
+.welcome {
+    letter-spacing: 0;
+    font-size: 3rem;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -52,7 +57,7 @@ $secondary: yellow;
   //   background-size: cover;
   //   background-repeat: no-repeat;
 //   background: $primary-bgimage;
-  background: $secondary;
+//   background: $secondary;
   @include tablet {
     justify-content: space-around;
     height: 70%;

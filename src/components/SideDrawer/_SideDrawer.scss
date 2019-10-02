@@ -28,18 +28,23 @@
 }
 
 //--VARIABLES--
+
+//--images
+// $primary-bgimage: url("../src/assets/images/tropical.jpg");
+
 //colors
 
 // background: #b11818;
-$primary-red: #a21722;
+$primary-red: #f44336;
 $primary-dark: #1b0103;
 
 $black-light: #251f1f;
-
+$secondary: #ffff9e;
+$sub-secondary: rgba(82, 23, 81, 1);
 
 .side-drawer {
   height: 100%;
-  background: $primary-red;
+  background: darkslategray;
   box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
   list-style: none;
   display: flex;
@@ -54,6 +59,11 @@ $black-light: #251f1f;
   transform: translateX(-100%);
   transition: transform 0.43s ease-out;
   // background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  // background: url('../src/components/imgs/tropical.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @include desktop {
     display: none;
   }
@@ -91,24 +101,19 @@ $black-light: #251f1f;
   align-items: center;
   justify-content: center;
   border-radius: 2.5px;
-  margin: 7px 0;
-  padding: 5px 6px;
+  margin: 12px 0;
+  padding: 5px 3px;
   height: 40px;
   width: 88%;
-  background: $black-light;
-  border-bottom: 1px solid #ecb260;
-  box-shadow: -2px 1px 0px 3px #751018;
+  background: #e2ecdb;
 }
 .ul-nav li a {
   height: 100%;
   line-height: 2.5rem;
-  letter-spacing: 0.1em;
-  font-size: 1.3rem;
-  color: palegoldenrod;
-  font-family: "Caveat Brush", cursive;
+  font-size: 1.13rem;
+  font-weight: bold;
+  color: $black-light;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
-// @media (min-width: 769px) {
-//   .side-drawer {
-//     display: none;
-//   }
-// }

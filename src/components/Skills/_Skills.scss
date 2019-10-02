@@ -1,10 +1,10 @@
+
+
 .skills-drawer {
-    height: 100%;
-    background: red;
+    height: 69%;
+    background: rgba(169, 202, 169, 0.93);
+    width: 80%;
+    overflow: scroll;
+    padding: 5%;
 }
 
-@media (min-width: 769px) {
-    .skills-drawer {
-        background: orange;
-    }
-}

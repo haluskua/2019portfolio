@@ -48,8 +48,7 @@ class App extends Component {
             height: "100vh",
             position: "fixed",
             overflow: "scroll",
-            width: "100vw",
-            background: "yellowgreen"
+            width: "100vw"
           }}
           className="App"
         >

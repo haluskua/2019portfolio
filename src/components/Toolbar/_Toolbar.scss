@@ -1,9 +1,53 @@
+//  SASS--MIXINS--
+@mixin mobile {
+  @media (min-width: 360px) {
+    @content;
+  }
+}
+@mixin mobile-landscape {
+  @media (min-width: 568px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+@mixin desktop-large {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+//--VARIABLES--
+
+//--images
+// $primary-bgimage: url("../src/assets/images/tropical.jpg");
+
+//colors
+
+// background: #b11818;
+$primary-red: #a21722;
+$primary-dark: #1b0103;
+
+$black-light: #251f1f;
+$secondary: yellow;
+$sub-secondary: rgba(82, 23, 81, 1);
+
 .toolbar {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  background: rgba(82, 23, 81, 0.34);
+  background: darkslategrey;
   height: 45px;
 }
 .toolbar_navigation {

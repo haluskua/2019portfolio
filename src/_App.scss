@@ -14,7 +14,7 @@ main {
   margin-top: 43;
   margin: 0;
 
-  background: rgba(20, 1, 1, 0.219);
+  background: rgb(34, 33, 26);
 }
 .hori-flex ul li {
   list-style: none;
@@ -36,16 +36,17 @@ main {
   height: 40px;
   padding: 0;
   margin: 0 auto;
-  font-size: 0.87rem;
-  color: #010100;
+  font-size: 1.1rem;
+  color: white;
   border-radius: 100% 100% 0 0;
   background: rgba(71, 11, 72, 0.28);
   box-shadow: 1px 0px 7px rgba(221, 172, 66, 0.5);
   text-align: center;
-  background: url("../src/assets/images/polygon.svg");
+  background: url("../src/assets/images/tropical.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-decoration: none;
   box-shadow: 1px 0px 7px rgba(238, 217, 191, 0.75);
 }
 .hori-flex ul li p a:hover,
@@ -82,8 +83,7 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;  
+    height: 100vh;
     background: yellowgreen;
-   
   }
 }
