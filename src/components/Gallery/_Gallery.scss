@@ -1,0 +1,10 @@
+.gallery-drawer {
+    height: 100%;
+    background: orange;
+}
+
+@media (min-width: 769px) {
+    .gallery-drawer {
+        background:yellow;
+    }
+}

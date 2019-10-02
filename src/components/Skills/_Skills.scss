@@ -1,0 +1,10 @@
+.skills-drawer {
+    height: 100%;
+    background: red;
+}
+
+@media (min-width: 769px) {
+    .skills-drawer {
+        background: orange;
+    }
+}

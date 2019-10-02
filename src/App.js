@@ -9,6 +9,9 @@ import Projects from "./components/Projects/Projects";
 import Life from "./components/Life/Life";
 import Workshop from "./components/Workshop/Workshop";
 import Contact from "./components/Contact/Contact";
+import Profile from "./components/Profile/Profile";
+import Skills from "./components/Skills/Skills";
+import Gallery from "./components/Gallery/Gallery";
 
 import "./_App.scss";
 
@@ -40,7 +43,16 @@ class App extends Component {
 
     return (
       <Router>
-        <div style={{ height: "100%" }} className="App">
+        <div
+          style={{
+            height: "100vh",
+            position: "fixed",
+            overflow: "scroll",
+            width: "100vw",
+            background: "yellowgreen"
+          }}
+          className="App"
+        >
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
           <SideDrawer show={this.state.sideDrawerOpen} />
           <TopDrawer />
@@ -48,10 +60,12 @@ class App extends Component {
           <Route path="/" component={Home} exact />
           <Route path="/Projects" component={Projects} exact />
           <Route path="/Life" component={Life} exact />
-          <Route path="/Workshop" component={Workshop} />
-          <Route path="/Contact" component={Contact} />
+          <Route path="/Workshop" component={Workshop} exact />
+          <Route path="/Contact" component={Contact} exact />
+          <Route path="/Profile" component={Profile} exact />
+          <Route path="/Skills" component={Skills} exact />
+          <Route path="/Gallery" component={Gallery} exact />
           {backdrop}
-
         </div>
       </Router>
     );

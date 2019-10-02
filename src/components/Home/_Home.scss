@@ -1,0 +1,80 @@
+//  SASS--MIXINS--
+@mixin mobile {
+  @media (min-width: 360px) {
+    @content;
+  }
+}
+@mixin mobile-landscape {
+  @media (min-width: 568px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+@mixin desktop-large {
+  @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+//--VARIABLES--
+
+//--images
+// $primary-bgimage: url("../src/assets/images/tropical.jpg");
+
+//colors
+
+// background: #b11818;
+$primary-red: #a21722;
+$primary-dark: #1b0103;
+
+$black-light: #251f1f;
+$secondary: yellow;
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  //   background: url("../src/assets/images/tropical.jpg");
+  //   background-position: center;
+  //   background-size: cover;
+  //   background-repeat: no-repeat;
+//   background: $primary-bgimage;
+  background: $secondary;
+  @include tablet {
+    justify-content: space-around;
+    height: 70%;
+    position: fixed;
+    bottom: 12%;
+  }
+}
+
+.box-left {
+  align-self: center;
+  background: rgba(0, 0, 0, 0.82);
+  padding: 10px;
+  height: auto;
+  width: 70%;
+  border: 1px solid #d0a569;
+  bottom: 0;
+  @include tablet {
+    align-self: center;
+  }
+
+  @include desktop {
+    width: 30%;
+    align-self: flex-end;
+  }
+}
